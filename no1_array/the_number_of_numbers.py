@@ -28,7 +28,6 @@ A × B × C = 150 × 266 × 427 = 17037300 이 되고,
 0
 0
 """
-
 A = int(input())
 B = int(input())
 C = int(input())
