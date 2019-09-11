@@ -16,20 +16,27 @@
 
 
 """
-def hanoi(plate, from_pos, to_pos, aux_pos, cnt):
+
+
+def hanoi(plate, from_pos, to_pos, aux_pos, cnt, array):
     if plate == 1:
-        print(str(from_pos) + " " + str(to_pos))
+        array.append(str(from_pos) + " " + str(to_pos))
         cnt = cnt + 1
-        return cnt
+        return cnt, array
 
-    cnt = hanoi(plate - 1, from_pos, aux_pos, to_pos, cnt)
-    print(str(from_pos) + " " + str(to_pos))
+    cnt, array = hanoi(plate - 1, from_pos, aux_pos, to_pos, cnt, array)
+    array.append(str(from_pos) + " " + str(to_pos))
     cnt = cnt + 1
-    cnt = hanoi(plate - 1, aux_pos, to_pos, from_pos, cnt)
+    cnt, array = hanoi(plate - 1, aux_pos, to_pos, from_pos, cnt, array)
 
-    return cnt
+    return cnt, array
 
 
 if __name__ == '__main__':
     N = int(input())
-    cnt = hanoi(N, 1, 3, 2, 0)
+
+    array = []
+    cnt, array = hanoi(N, 1, 3, 2, 0, array)
+    print(cnt)
+    for str_val in array:
+        print(str_val)
