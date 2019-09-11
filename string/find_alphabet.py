@@ -20,6 +20,8 @@ if __name__ == '__main__':
 
     alphabet_list = list(ascii_lowercase)
 
+    print(alphabet_list)
+
     rslt = ""
 
     for var in alphabet_list:
