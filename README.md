@@ -2,8 +2,8 @@
 백준 알고리즘 100제 하나씩 하나씩 꾸준하게
 * 사이트 링크 : https://www.acmicpc.net/step
 
-# 현재 막힌 부분
-1. 수학1, Fly me to the Alpha Centauri
+# 막힌 부분
+1. [수학1] Fly me to the Alpha Centauri
 
 # 왜 필요한가.
 개발자가 꿈이고 목표니까. 중급을 넘기 위해서.
