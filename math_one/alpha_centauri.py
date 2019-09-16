@@ -42,3 +42,52 @@ x는 항상 y보다 작은 값을 갖는다. ( 0 ≤ x < y < 231)
 4
 
 """
+
+test_num = int(input())
+ans = []
+
+for i in range(test_num):
+    x, y = map(int, input().split())
+    distance = y - x
+
+    k = 1
+    p = 1
+
+    while distance > 0:
+        distance -= k
+        k = k + 1
+        if distance >= p:
+            distance -= p
+            p = p + 1
+
+    ans.append(k+p-2)
+
+
+for i in ans:
+    print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
