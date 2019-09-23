@@ -25,5 +25,20 @@
 예제 출력 1
 6
 10
-
 """
+number = int(input())
+for m in range(number):
+    i = int(input())+2
+    n = int(input())-1
+    a = [1]*i
+    for l in range(len(a)-1, -1, -1):
+        sum = 0
+        for k in range(j, -1, -1):
+            sum += a[k]
+        a[j] = sum
+    print(a[i-1])
+
+
+
+
+
