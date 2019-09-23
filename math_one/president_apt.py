@@ -26,6 +26,7 @@
 6
 10
 """
+
 number = int(input())
 for m in range(number):
     i = int(input())+2
